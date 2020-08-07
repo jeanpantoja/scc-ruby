@@ -9,5 +9,14 @@ This project provides a simple wrapper to use the [scc] program at ruby code.
 First download the scc binary and then place it at /usr/local/bin(unix-like) or other folder
 from you S.O. that is in PATH system environment variable.
 
+# Usage
+
+```ruby
+require 'scc'
+
+scc_scanner = SCC::Scanner.new 'my-source-code-dir'
+scc_scanner.languages.each { |l| puts l}
+```
+
 [scc]: <https://github.com/boyter/scc>
 [scc releases]: <https://github.com/boyter/scc/releases>

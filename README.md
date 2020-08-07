@@ -9,6 +9,11 @@ This project provides a simple wrapper to use the [scc] program at ruby code.
 First download the scc binary and then place it at /usr/local/bin(unix-like) or other folder
 from you S.O. that is in PATH system environment variable.
 
+To install the scc gem just place the current line at your Gemfile and __edit the value
+of tag argument__.
+```
+gem 'scc', git: 'https://github.com/jeanpantoja/scc-ruby.git', tag: 'desired-version-tag'
+```
 # Usage
 
 ```ruby
